@@ -1,2 +1,3 @@
 <?php
-echo'Configuração do sistema';
+echo'<br>Configuração do sistema</br>';
+echo '<br></br>';
