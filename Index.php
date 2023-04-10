@@ -5,4 +5,4 @@ echo '<h1>Arquivo Index</h1>';
 
 echo saudacao();
 echo'<hr>';
-echo resumirTexto();
+echo resumirTexto('Meu nome é Miriam', 50,'...' );
