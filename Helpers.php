@@ -2,8 +2,8 @@
 echo '<br>Arquivos de Funções</br>';
 function saudacao()
 {
-   $hora = date('H', 'I','S');
-   echo $hora;
+   $hora = date('H');
+   echo $hora. '' .'hrs';
    echo '<br></br>';
    $saudacao1  = 'Bom dia';
    if ($hora >= 0 and $hora <= 5) {
@@ -14,7 +14,7 @@ function saudacao()
    } else {
       $saudacao1 = 'Adeus';
       return $saudacao1;
-       }
+   }
 }
 
 function resumirTexto($texto, int  $limite, $continue = '...')
