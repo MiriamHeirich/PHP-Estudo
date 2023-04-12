@@ -17,6 +17,14 @@ function saudacao()
    }
 }
 
+/**
+ * Resume um texto
+ * 
+ * @param string $texto texto para resumir
+ * @param int  $limite quantidade de caractgeres
+ * @param string $continue exibe ao final do resumo 
+ * @return string texto resumido
+ */
 function resumirTexto($texto, int  $limite, $continue = '...')
 {
    return $texto;
