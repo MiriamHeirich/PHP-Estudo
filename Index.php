@@ -23,4 +23,4 @@ echo'<hr>';
 $data  = date('d/m/Y  H:i:s') ;
  echo $data;
  echo'<hr>';
- contarTempo('2023-04-13 20:05');
+ echo contarTempo('2023-04-13 00:05:15');
