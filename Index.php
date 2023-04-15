@@ -2,18 +2,14 @@
 require_once 'config.php';
 include_once 'Helpers.php';
 
-
 echo '<h1>Arquivo Index</h1>';
 
 echo saudacao();
-echo '<br></br>';
-$texto= 'Contagem de caracteres';
-echo $texto = mb_strlen(trim($texto));
-// echo'<hr>';
-// echo resumirTexto('Meu nome é Miriam', 50,'...' );
+echo'<hr>';
 
-echo '<br></br>';
+echo'<hr>';
 $valor = 5;
+
 // if ($valor){
 //    echo $valor;
 // }
@@ -22,13 +18,9 @@ $valor = 5;
 // }
 
 //Operador Ternário da função IF acima.
-
-echo '<br></br>';
 echo ($valor ? $valor:0);
-date_default_timezone_set('America/Sao_Paulo');
+echo'<hr>';
 $data  = date('d/m/Y  H:i:s') ;
-echo $data;
-
-
-
-
+ echo $data;
+ echo'<hr>';
+ contarTempo('2023-04-13 20:05');
