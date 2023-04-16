@@ -6,12 +6,35 @@ function validarEmail(string $email): bool{
    return filter_var ($email, FILTER_VALIDATE_EMAIL);//filter em PHP possui várias validações
 }
 
+/**
+ * validarUrl
+ * Verifica se uma Url é válida
+ * 
+ * @param string $url recebe a url digitada
+ * @return boolean retorna se a url éválida
+ */
+
 function validarUrl(string $url): bool{
-   return filter_var ($url, FILTER_VALIDATE_URL);//filter em PHP possui várias validações
+   
+   if(mb_strlen($url)<10){
+      return false;
+   }
+   
+   if (!str_contains($url, '.')){
+      return false;
+   }
+   if (str_contains($url, 'http://') or str_contains($url, 'https://')){
+      return true;
+   }
+
+      return false;
+
 }
 
-
-
+//Mesma função acima mas com Filter
+function validarUrlcomFiltro (string $url): bool{
+   return filter_var ($url, FILTER_VALIDATE_URL);
+}
 
 
 /**
@@ -60,19 +83,19 @@ function saudacao()
    echo'<hr>';
    $saudacao1  = 'Bom dia';
    if ($hora >= 06 and $hora <= 12) {
-      return $saudacao1;
+         return $saudacao1;
    } else if ($hora >= 12 and $hora <= 18) {
-      $saudacao1 = 'Boa tarde!';
-      return $saudacao1;
+         $saudacao1 = 'Boa tarde!';
+          return $saudacao1;
    } else {
-      $saudacao1 = 'Boa noite';
-      return $saudacao1;
+         $saudacao1 = 'Boa noite';
+         return $saudacao1;
    }
 }
 
 /**
  * resumirTexto
- * Resume um texto
+ * Resume um texto...........................................
  * 
  * @param string $texto texto para resumir
  * @param int  $limite quantidade de caracteres
