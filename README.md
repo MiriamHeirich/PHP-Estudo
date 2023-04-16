@@ -1,5 +1,6 @@
 # PHP-Estudo
-<p> Curso de PHP do básico ao avançado
-Segundo clone pq o primeiro exclui por abestada
+<p> Curso de PHP do zero ao profissional
 <br></br>
 🐘
+<hr>
+
