@@ -2,6 +2,18 @@
 
 echo '<br>Arquivos de Funções</br>';
 
+function validarEmail(string $email): bool{
+   return filter_var ($email, FILTER_VALIDATE_EMAIL);//filter em PHP possui várias validações
+}
+
+function validarUrl(string $url): bool{
+   return filter_var ($url, FILTER_VALIDATE_URL);//filter em PHP possui várias validações
+}
+
+
+
+
+
 /**
  * contarTempo
  * Pega a hora atual e reduz da hora em que foi postado, segundo  banco de dados
