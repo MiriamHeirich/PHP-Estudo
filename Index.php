@@ -17,7 +17,8 @@ include_once 'Helpers.php';
 //  }else {
 //     echo'Email inválido';
 //  }
- $url='teste';
- var_dump(validarUrl($url));
+
+
 echo '<hr>';
  var_dump(validarUrlcomFiltro('http://teste.com'));
+ echo SITE_NOME;
