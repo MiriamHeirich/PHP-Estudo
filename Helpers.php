@@ -3,6 +3,12 @@
 
 echo '<br>Arquivos de Funções</br>';
 
+function slug(string $string){
+   $mapa['a']= '';
+   return $string;
+
+}
+
 function dataAtual() {
    $diaMes = date('d');
    $diaSemana = date('w');
