@@ -154,8 +154,17 @@ function saudacao()
       $saudacao= 'Boa tarde';
       break;
    default:
-   $saudacao= 'Boa noite';
+      $saudacao= 'Boa noite';
    }
+
+   // /**Match */
+   // $hora = date('H');
+   // $saudaçao= match($hora){
+   //    '20'=>'Boa madrugada',
+   //    '23'=> 'Boa madrugada'
+
+   // };
+    return $saudacao;
 }
 
 
