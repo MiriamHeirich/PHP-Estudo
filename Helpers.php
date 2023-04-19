@@ -28,7 +28,7 @@ if(str_starts_with($url,'/'))
 {
    return $ambiente.$url;
 }
-return $ambiente.'/'.$url;
+   return $ambiente.'/'.$url;
 }
 
 
@@ -45,7 +45,7 @@ function localhost():bool{
    if ($servidor == 'localhost'){
       return true;
    }
-   return false;
+      return false;
 }
 
 function validarEmail(string $email): bool{
@@ -77,7 +77,7 @@ function validarUrl(string $url): bool{
 
 }
 
-//Mesma função acima mas com Filter
+
 function validarUrlcomFiltro (string $url): bool{
    return filter_var ($url, FILTER_VALIDATE_URL);
 }
@@ -123,21 +123,56 @@ function contarTempo (string $data){
 }
 
 function saudacao()
+// {
+//    $hora = date('H');
+//    echo $hora. '' .'hrs';
+//    echo'<hr>';
+//    $saudacao1  = 'Bom dia';
+//    if ($hora >= 06 and $hora <= 12) {
+//          return $saudacao1;
+//    } 
+//    else if ($hora >= 12 and $hora <= 18) {
+//          $saudacao1 = 'Boa tarde!';
+//           return $saudacao1;
+//    } 
+//    else {
+//          $saudacao1 = 'Boa noite';
+//          return $saudacao1;
+//    }
+// }
+/****Switch */
 {
    $hora = date('H');
-   echo $hora. '' .'hrs';
-   echo'<hr>';
-   $saudacao1  = 'Bom dia';
-   if ($hora >= 06 and $hora <= 12) {
-         return $saudacao1;
-   } else if ($hora >= 12 and $hora <= 18) {
-         $saudacao1 = 'Boa tarde!';
-          return $saudacao1;
-   } else {
-         $saudacao1 = 'Boa noite';
-         return $saudacao1;
+   switch ($hora){
+      case $hora >= 0 && $hora <=5;
+      $saudacao= 'Boa madrugada';
+      break;
+      case $hora >= 6 && $hora <=12;
+      $saudacao= 'Bom dia';
+      break;
+      case $hora >= 13 && $hora <=18;
+      $saudacao= 'Boa tarde';
+      break;
+   default:
+   $saudacao= 'Boa noite';
    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * resumirTexto
