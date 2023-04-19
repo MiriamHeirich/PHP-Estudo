@@ -3,11 +3,7 @@
 
 echo '<br>Arquivos de Funções</br>';
 
-function slug(string $string){
-   $mapa['a']= '';
-   return $string;
 
-}
 
 function dataAtual() {
    $diaMes = date('d');
@@ -16,7 +12,7 @@ function dataAtual() {
    $ano = date('Y');
    $nomeDiasdaSemana= ['segunda','terça','quarta','quinta','sexta','sabado','domingo'];
    $nomeDosMeses = ['janeiro','fevereiro','março','abril','maio','junho'
-   ,'julho','agosto','setembro','outubro','novembro','dezembro'];
+                      ,'julho','agosto','setembro','outubro','novembro','dezembro'];
 
       $dataFormatada = $nomeDiasdaSemana[$diaSemana].','.$diaMes.' de ' .$nomeDosMeses[$mes].' de '.$ano;
       return $dataFormatada;
