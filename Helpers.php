@@ -1,8 +1,18 @@
 <?php
 
-
+ //Tudo que for diferente de 9 e 0 será substituido por vazio.
+ //   echo "CPF:". $limparNumero = preg_replace('/[^0-9]/','',$CPF);
 echo '<br>Arquivos de Funções</br>';
-
+  echo '<hr>';
+  $CPF='058.068.129-79';
+  var_dump(validarCPF($CPF));
+ function validarCPF(string $CPF):bool{
+   if(mb_strlen($CPF)!= 11 or preg_match('/(\d)\1{10}/',$CPF) ){
+      return false;
+   }
+   return true;
+ 
+}
 
 
 function dataAtual() {

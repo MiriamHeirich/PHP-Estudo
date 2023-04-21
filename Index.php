@@ -25,10 +25,11 @@
 <body>
 	<div class="container">
 		<?php
+	
          require_once 'config.php';
          include_once 'Helpers.php';
- 
-         echo ''.saudacao().' <br> '.'Hoje é'.'  '. dataAtual();
+ echo validarCPF($limparNumero);
+         echo ''.saudacao().' <br> '.'Hoje é  '.'  '. dataAtual();
          echo'<hr>';
 ?>
 	</div>
