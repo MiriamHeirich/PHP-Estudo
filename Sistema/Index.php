@@ -24,16 +24,18 @@
 </head>
 <body>
 	<div class="container">
-		<?php
+	<?php
 	
-         require_once 'config.php';
-         include_once 'Helpers.php';
+	require_once 'config.php';
+	include_once 'Helpers.php';
+	include 'C:\xampp\htdocs\blog\Sistema\Nucleo\Mensagem.php';
+		 $msg = new Mensagem();
+		 var_dump($msg);
+;
 
-         echo ''.saudacao().' <br> '.'Hoje é  '.'  '. dataAtual();
-         echo'<hr>';
 ?>
 	</div>
-	/*hiyui*/
+
 </body>
 </html
 
