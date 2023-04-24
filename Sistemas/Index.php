@@ -28,7 +28,7 @@
 	
          require_once 'config.php';
          include_once 'Helpers.php';
- echo validarCPF($limparNumero);
+
          echo ''.saudacao().' <br> '.'Hoje é  '.'  '. dataAtual();
          echo'<hr>';
 ?>
