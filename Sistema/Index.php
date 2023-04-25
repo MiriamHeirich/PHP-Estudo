@@ -30,8 +30,8 @@
 	include_once 'Helpers.php';
 	include 'C:\xampp\htdocs\blog\Sistema\Nucleo\Mensagem.php';
 		 $msg = new Mensagem();
-		 var_dump($msg);
-;
+		 echo$msg->renderizar();
+
 
 ?>
 	</div>
