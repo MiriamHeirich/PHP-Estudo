@@ -3,9 +3,10 @@
 	<?php
 	
 	require_once 'config.php';
-	include_once 'Helpers.php';
+	include_once 'C:\xampp\htdocs\blog\Sistema\Nucleo\Helpers.php';
 	include 'C:\xampp\htdocs\blog\Sistema\Nucleo\Mensagem.php';
-		 $msg = new Mensagem();
+	use Sistema\Nucleo\Mensagem;
+		 $msg = new Mensagem;
 		 echo $msg->sucesso('Sucesso mensagem')->renderizar();
 		 echo '<hr>';
 		

@@ -1,5 +1,7 @@
 <?php
 
+class Helpers{
+  
  //Tudo que for diferente de 9 e 0 será substituido por vazio.
  //   echo "CPF:". $limparNumero = preg_replace('/[^0-9]/','',$CPF);
 echo '<br>Arquivos de Funções</br>';
@@ -178,21 +180,6 @@ function saudacao()
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
  * resumirTexto
  * Resume um texto...........................................
@@ -205,4 +192,6 @@ function saudacao()
 function resumirTexto($texto, int  $limite, $continue = '...')
 {
    return $texto;
+}
+
 }
