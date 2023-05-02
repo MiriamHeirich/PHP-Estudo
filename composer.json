@@ -1,0 +1,17 @@
+{
+    "name": "comiriam/cursophp",
+    "description": "Curso de  PHP",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Comiriam\\Cursophp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Miriam"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
