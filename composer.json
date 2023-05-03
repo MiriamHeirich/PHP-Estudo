@@ -10,7 +10,7 @@
     "files": [
         "sistema/config.php"
     ]
-},
+    },
     "authors": [
         {
             "name": "Miriam",
@@ -24,3 +24,4 @@
         "pecee/simple-router": "dev-master"
     }
 }
+
