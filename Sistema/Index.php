@@ -8,8 +8,9 @@
 	// 	 $msg = new Mensagem;
 	// 	 echo $msg->sucesso('Sucesso mensagem')->renderizar();
 	// 	 echo '<hr>';
-	require 'C:\xampp\htdocs\blog\vendor\autoload.php';
-	echo saudacao();
+	require 'vendor/autoload.php';
+	require 'rotas.php';
+	
 		
 
 
