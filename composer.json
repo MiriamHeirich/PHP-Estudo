@@ -4,14 +4,23 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Comiriam\\Cursophp\\": "src/"
-        }
+            "Sistema\\": "sistema/"
+        
     },
+    "files": [
+        "sistema/config.php"
+    ]
+},
     "authors": [
         {
-            "name": "Miriam"
+            "name": "Miriam",
+            "email": "franheirich5@gmail.com",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "PHP": ">=7.0"
+    }
 }
+
